@@ -1,8 +1,13 @@
 /* Feuille de style principale */
 @font-face {
-	font-family: "Beabella";
-		src: url("/fonts/Beabella.otf") format("otf");
- }
+	font-family: 'Beabella';
+	src: url('../fonts/Beabella.otf') format('opentype'),
+		url('../fonts/BeabellaRegular.woff2') format('woff2'),
+		url('../fonts/BeabellaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
 	background-color: gold;
@@ -14,8 +19,8 @@ header {
 	background-color: black;
 	text-align: left;
 	margin: 2px 0 0 0;
-	padding: 5px 10px 5px 10px;
-	height: 140px;
+	padding: 15px 10px 5px 20px;
+	height: 80px;
 }
 
 main {
@@ -31,14 +36,33 @@ header img {
 	float: left;
 	background-color: white;
 	border-radius: 50px;
+	width: 64px;
+	box-shadow: 0 0 20px pink;
 }
 
 header h1 {
-	margin-left: 120px;
+	margin: 0px 0 0 80px;
 	font-weight: bold;
 	font-family: Beabella, Comic Sans MS, serif;
 }
 
 header h1 a {
 	color: white;
+	text-decoration: none;
 }
+
+figure img {
+	border-radius: 20px;
+	box-shadow: 0 0 20px pink;
+}
+
+figcaption {
+	font-family: 'Comic sans MS';
+}
+
+/* TODO : 
+	1. add some style for the buttons
+	2. customize the color palette to your own taste
+		choose something different from black/gold/pink
+	3. import a custom font for the footer (from Google or elsewhere)
+*/

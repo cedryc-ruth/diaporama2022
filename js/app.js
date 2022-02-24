@@ -60,7 +60,19 @@ btPrev.onclick = function() {
 
 setInterval(function() { btNext.click(); }, 3000);
 
-
+/* TODO: 
+	1. add navigation's buttons functionality
+		first: stops the automatic mode and goes to the first picture,
+		last: stops the automatic mode and goes to the last picture,
+		stop: stops the automatic mode,
+		pause: pauses the automatic mode and restarts it when pressed again,
+	2. add mode's buttons functionality (gallery, diaporama)
+	3. add some data for each picture (date, author, country)
+	4. display all the data of a picture when you click on it
+	5. add a sort functionality 
+		to sort the pictures by description, date, author or country
+		with the use of a form (select & button)
+*/
 
 
 

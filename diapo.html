@@ -13,12 +13,30 @@
 	</div>
 </header>
 <main>
-	<button id="btPrev">&#9664;</button>
 	<figure id="cadre">
 		<img src="images/landscape1.jpg" alt="" width="450">
 		<figcaption>Paysage suisse</figcaption>
 	</figure>
-	<button id="btNext">&#9654;</button>
+	<div>
+		<!-- Affiche la première photo -->
+		<button id="btFirst">&#9198;</button>
+		<!-- Affiche la photo précédente -->
+		<button id="btPrev">&#9664;</button>
+		<!-- Affiche la photo suivante -->
+		<button id="btNext">&#9654;</button>
+		<!-- Stoppe le diaporama automatique -->
+		<button id="btStop">&#9209;</button>
+		<!-- Met en pause ou relance le diaporama automatique -->
+		<button id="btPause">&#9208;</button>
+		<!-- Affiche la dernière photo -->
+		<button id="btLast">&#9197;</button>
+	</div>
+	<div>
+		<!-- Affichage en mode galerie -->
+		<button id="btGalleryMode">&#9638;</button>
+		<!-- Affichage en mode diaporama -->
+		<button id="btDiapoMode">&#10720;</button>
+	</div>
 </main>
 <footer>
 	<p>&copy; EPFC - 2022</p>
@@ -26,3 +44,7 @@
 <script src="js/app.js"></script>
 </body>
 </html>
+<!-- TODO: 
+	1. remplacez les icônes par des icônes de la librairie FontAwesome
+	2. affichez les informations supplémentaires ajoutées dans le script JS (date, auteur, pays...)
+-->
