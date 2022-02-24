@@ -1,4 +1,9 @@
 /* Feuille de style principale */
+@font-face {
+	font-family: "Beabella";
+		src: url("/fonts/Beabella.otf") format("otf");
+ }
+
 body {
 	background-color: gold;
 	margin: auto;
@@ -28,8 +33,12 @@ header img {
 	border-radius: 50px;
 }
 
+header h1 {
+	margin-left: 120px;
+	font-weight: bold;
+	font-family: Beabella, Comic Sans MS, serif;
+}
+
 header h1 a {
 	color: white;
-	font-weight: bold;
-	font-family: Beabella;
 }
