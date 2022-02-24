@@ -1,9 +1,21 @@
 /* Functions JS */
 const liste = [
-	'images/landscape1.jpg',
-	'images/landscape2.jpg',
-	'images/landscape3.jpg',
-	'images/landscape4.jpg',
+	{
+		url: 'images/landscape1.jpg',
+		description: 'Paysage suisse'
+	},
+	{
+		url: 'images/landscape2.jpg',
+		description: 'Montagne du nord'
+	},
+	{
+		url: 'images/landscape3.jpg',
+		description: 'Pic neigeux'
+	},
+	{
+		url: 'images/landscape4.jpg',
+		description: 'Prairie du printemps'
+	},
 ];
 
 let position = 0;
@@ -21,9 +33,17 @@ btNext.onclick = function() {
 		position = -1;
 	}
 	
-	img.src = liste[++position];
-	img.alt = 'Autre chose';
-	figcaption.innerText = 'Autre chose';
+	position++;
+	
+	let url = liste[position].url;
+	let description = liste[position].description;
+	let debut = url.lastIndexOf('/')+1;
+	let fin = url.lastIndexOf('.');
+	let nom = url.substring(debut,fin);
+	
+	img.src = url;
+	img.alt = nom;							//Nom du fichier
+	figcaption.innerText = description;		//Description
 };
 
 btPrev.onclick = function() {
@@ -31,10 +51,18 @@ btPrev.onclick = function() {
 		position = liste.length;
 	}
 	
-	img.src = liste[--position];
+	position--;
+	
+	img.src = liste[position][0];
 	img.alt = 'Autre chose';
 	figcaption.innerText = 'Autre chose';
 };
+
+setInterval(function() { btNext.click(); }, 3000);
+
+
+
+
 
 
 
